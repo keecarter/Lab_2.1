@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lab 2.1 - Form Practice</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="/Lab_2.1/src/index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="http://127.0.0.1:5500/form">
+      <div>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname">
+      </div>
+      <div>
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname">
+      </div>
+      <div>
+      <label for="HTML"><input id="HTML" type="radio" name="language" value="HTML"/>HTML</label>
+      <label for="CSS"><input id="CSS" type="radio" name="language" value="CSS"/>CSS</label>
+      <label for="JavaScript"><input id="JavaScript" type="radio" name="language" value="JavaScript"/>JavaScript</label>
+      </div>
+
+      <div>
+        <label for="Sedan"><input id="Sedan" type="checkbox" name="vehicle" value="Sedan"/>Sedan</label>
+        <label for="Coupe"><input id="Coupe" type="checkbox" name="vehicle" value="Coupe"/>Coupe</label>
+        <label for="SUV"><input id="SUV" type="checkbox" name="vehicle" value="SUV"/>SUV</label>
+      </div>
+      
+      <div>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="Honda">Honda</option>
+        <option value="Kia">Kia</option>
+        <option value="Toyota">Toyota</option>
+      </select>
+      </div>
+    
+      <button type="submit">Submit form</button>
+
+    </form>
+    
+  </main>
+
+  <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>
